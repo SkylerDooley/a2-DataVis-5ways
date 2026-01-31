@@ -14,7 +14,7 @@ df = df.dropna(subset=[
     "species"
 ])
 
-chart = alt.Chart(df).mark_circle(opacity=0.7).encode( #opacity 0f 0.7 matches given image
+chart = alt.Chart(df).mark_circle(opacity=0.8).encode( # opacity 0f 0.8 matches given image
     x=alt.X("flipper_length_mm:Q", title="Flipper Length (mm)",
             scale=alt.Scale(domain=[170,235])),
     y=alt.Y("body_mass_g:Q", title="Body Mass (g)",

@@ -171,7 +171,7 @@ d3.csv("penglings.csv").then(data => {
     .attr("font-size", "12px")
     .attr("font-weight", "bold");
 
-    // easiest way to download chart into png, asked microsoft copilot
+    // easiest way for me to download chart into png, asked microsoft copilot for the following code
     document.getElementById("saveBtn").addEventListener("click", function () {
     const svg = document.getElementById("chart");
     const serializer = new XMLSerializer();
@@ -182,7 +182,7 @@ d3.csv("penglings.csv").then(data => {
     canvas.height = svg.height.baseVal.value;
 
     const ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, canvas.width, canvas.height);    // add white background
+    ctx.fillStyle = "white"; ctx.fillRect(0, 0, canvas.width, canvas.height);    // add white background
     const img = new Image();
 
     img.onload = function () {
